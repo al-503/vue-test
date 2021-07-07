@@ -2,8 +2,9 @@
   <img id="logo" alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="initiation vue.js par youtube"/>
   <nav>
-    <router-link to='/'>Acceuil</router-link>
-    <router-link to='/about'>A propos</router-link>
+    <router-link to='/'>Acceuil</router-link> |
+    <router-link to='/about'>A propos</router-link> |
+    <router-link :to="{name: 'Product', params : {name: 'skate'}}">produit 1</router-link>
     <router-view />
   </nav>
 </template>
